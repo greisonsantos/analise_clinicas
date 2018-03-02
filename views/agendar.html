@@ -1,0 +1,205 @@
+<?php
+
+$email=$_POST['email'];
+
+echo $email;
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Análises Clinicas</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="../bootstrap/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="../bootstrap/font-awesome/font-awesome.css">
+
+
+
+
+
+
+
+	<style type="text/css">
+
+
+		#centro {
+			width:100px;
+			height:100px;
+			position:absolute;
+			top:190px;
+			left:900px;
+		}
+		#img{
+			position:absolute;
+			top:25px;
+			margin-left:10px;
+
+		}
+
+
+
+
+		.menuhorizontal li{ 
+			display: inline;
+
+			padding:0px;
+			margin: 100px;
+			width: 150px;
+			border-left: #666666 thin solid;
+		}
+
+
+		.h3{
+
+			text-align: right;
+			margin-right: 10px;	
+		}
+
+		#emcima:hover{
+			color: red;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse" style="background: #228B22; color: #FFFFFF">
+		<br>
+		<div class="row">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-">
+						<h4> Laboratório de análises clinicas- Datas/MG</h4> 
+					</div>
+					<div class="col-sm-">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="col-md-6"></div>
+								<div class="col-md " id="menu">
+									<ul class="nav navbar-nav navbar-right" >
+										<ul class="menuhorizontal">
+											<li> Bem Vindo Naila!</li>
+											<li><a href="../index.html" style="color: white">SAIR</a></li>
+										</ul>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<br>
+	</nav>
+	<img src="../img/logo.png" class="center-block" height="auto" width="50px" id="img">
+
+
+
+	<div class="row">
+		<div class="col-md" id="centro">
+			<img src="../img/logo.png" class="img-responsive" alt="Cinque Terre">
+		</div>
+	</div>
+
+	<br>
+	<h1 class="text-center" style="color: #228B22;"> Agendamento </h1>
+	<div class="container">
+		<section class="container-fluid text-center" style="min-height: 80vh;">
+
+			<div class="row">
+				<div class="col-md-9">
+					<div class="input-group">
+						<span class="input-group-addon" id="basic-addon1">Nome :</span>
+						<input type="text" class="form-control"  placeholder="Nome do Paciente" required aria-describedby="basic-addon1" value="">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-9">
+					<br>
+					<div class="input-group">
+						<span class="input-group-addon" id="basic-addon1">Exame :</span>
+						<input type="text" class="form-control"  placeholder="Nome Exame" required aria-describedby="basic-addon1" value="">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<br>
+					<div class="input-group">
+						<span class="input-group-addon" id="basic-addon1">Data :</span>
+						<input type="text" class="form-control"  placeholder="00/00/0000" required aria-describedby="basic-addon1" value="">
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<br>
+					<div class="input-group">
+						<span class="input-group-addon" id="basic-addon1">Local :</span>
+						<input type="text" class="form-control" id="autor" placeholder="" required aria-describedby="basic-addon1" value="">
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<br>
+					<div class="input-group">
+						<span class="input-group-addon" id="basic-addon1">Horário :</span>
+						<input type="text" class="form-control"  placeholder="00:00" required aria-describedby="basic-addon1" value="">
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-9">
+					<br>
+					<div class="input-group">
+						<span class="input-group-addon"  size="2" id="basic-addon1">Médico:</span>
+						<input type="text" class="form-control" id="edicao" name="edicao" placeholder="Nome do medico.." required aria-describedby="basic-addon1" value="">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<br>
+					<div class="input-group">
+						<span class="input-group-addon"  size="2" id="basic-addon1"> Convênio:</span>
+						<input type="text" class="form-control"   required aria-describedby="basic-addon1"  placeholder="SUS.." value="">
+					</div>
+				</div>
+			</div>
+           <br><br>
+			<div class="row">
+				<div class="col">
+					<a href="agendar_exame.html">
+						<button type="button" id="voltar" class="btn btn-info btn-block">Voltar</button>
+					</a>
+				</div>
+				<div class="col">
+					<a href="agendar_exame.html">
+						<button type="button" id="voltar" class="btn btn-success btn-block">Salvar</button>
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+
+	</section>
+
+
+</div>
+
+<footer class="footer fixed-bottom" style="background: #228B22; color: #FFFFFF">
+	<p class="text-center"> Copyright Laboratório de Análises Clínicas-Datas/MG. Todos os direitos reservados. </p>
+</footer>
+
+</body>
+</html>

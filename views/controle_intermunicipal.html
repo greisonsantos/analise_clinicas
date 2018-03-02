@@ -1,0 +1,226 @@
+<?php
+
+$email=$_POST['email'];
+
+echo $email;
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Análises Clinicas</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="../bootstrap/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="../bootstrap/font-awesome/font-awesome.css">
+
+
+
+
+
+
+
+	<style type="text/css">
+
+
+		#centro {
+			width:100px;
+			height:100px;
+			position:absolute;
+			top:190px;
+			left:800px;
+		}
+		#img{
+			position:absolute;
+			top:25px;
+			margin-left:10px;
+
+		}
+
+
+
+
+		.menuhorizontal li{ 
+			display: inline;
+
+			padding:0px;
+			margin: 100px;
+			width: 150px;
+			border-left: #666666 thin solid;
+		}
+
+
+		.h3{
+
+			text-align: right;
+			margin-right: 10px;	
+		}
+
+		#emcima:hover{
+			color: red;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse" style="background: #228B22; color: #FFFFFF">
+		<br>
+		<div class="row">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-">
+						<h4> Laboratório de análises clinicas- Datas/MG</h4> 
+					</div>
+					<div class="col-sm-">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="col-md-6"></div>
+								<div class="col-md " id="menu">
+									<ul class="nav navbar-nav navbar-right" >
+										<ul class="menuhorizontal">
+											<li> Bem Vindo Naila!</li>
+											<li><a href="../index.html" style="color: white">SAIR</a></li>
+										</ul>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<br>
+	</nav>
+	<img src="../img/logo.png" class="center-block" height="auto" width="50px" id="img">
+
+
+
+
+
+	<br>
+	<div class="container">
+		<section class="container-fluid text-center" style="min-height: 80vh;">
+			<br>	
+			<h1 class="text-center" style="color: #228B22;"> Controle Intermunicipal </h1>
+            <br>
+			<div class="row">
+			<div class="col-sm-5 col-md-6">
+		     
+		     <div class="card">
+
+						<div class="content table-responsive table-full-width">
+							<table class="table table-striped table-hover" border="1px">
+								<thead>
+									<tr class="text-center">
+										<th class="text-center"> GOUVEIA</th>
+										<th>  </th>
+										<th>  </th>
+										
+								</thead>
+
+								<tbody>
+									<tr>
+										<td><b> NOME</b></td>
+										<td><b> EXAME</b></td>
+										<td><b> DATA ENVIO</b></td>
+									
+									</tr>
+									
+									<tr>
+										<td> Alan</td>
+										<td> Hemominas</td>
+										<td>02/03/2018</td>
+									
+									</tr>
+									<tr>
+
+
+										<td></td>
+										<td></td>
+										<td></td>
+									
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+			</div>
+				<div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+				    <div class="card">
+
+						<div class="content table-responsive table-full-width">
+							<table class="table table-striped table-hover" border="1px">
+								<thead>
+									<tr class="text-center">
+										<th class="text-center"> DIAMANTINA</th>
+										<th>  </th>
+										<th>  </th>
+										
+								</thead>
+
+								<tbody>
+									<tr>
+										<td><b> NOME</b></td>
+										<td><b> EXAME</b></td>
+										<td><b> DATA ENVIO</b></td>
+									
+									</tr>
+									
+									<tr>
+										<td> Marcelo</td>
+										<td> Hemominas</td>
+										<td>16/03/2018</td>
+									
+									</tr>
+									<tr>
+
+
+										<td></td>
+										<td></td>
+										<td></td>
+									
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>	 
+
+            <br>
+			<div class="row">
+				<div class="col-md-6">
+				
+				<div class="col-md-12">
+					<a href="gestao_exames.html">
+						<button type="button" id="voltar" class="btn btn-success btn-block">Voltar</button>
+					</a>
+				</div>	
+				</div>
+				<div class="col-md-6">
+					<a href="#">
+						<button type="button" id="voltar" class="btn btn-info btn-block">Imprimir</button>
+					</a>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+</div>
+
+<footer class="footer fixed-bottom" style="background: #228B22; color: #FFFFFF">
+	<p class="text-center"> Copyright Laboratório de Análises Clínicas-Datas/MG. Todos os direitos reservados. </p>
+</footer>
+
+</body>
+</html>
